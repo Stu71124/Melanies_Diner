@@ -10,7 +10,8 @@ st.write(
 
 title = st.text_input("Name on smoothie:")
 st.write("The name on your smoothie will be:", title)
-session = get_active_session()
+cnx = st.connection("snowflake")
+session = cnx.session()
 my_dataframe = session.table("smoothies.public.fruit_options").select(col("FRUIT_NAME"))
 
 ingredients_list = st.multiselect('Choose up to 5 ingreidents:',my_dataframe, max_selections=5)
