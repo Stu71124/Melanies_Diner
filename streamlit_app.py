@@ -39,14 +39,6 @@ if ingredients_list:
             session.sql(my_insert_stmt).collect()
             st.success('Your Smoothie is ordered,'+title +'!', icon="✅")
 
-        
-#my_update_stmt = """ update smoothies.public.orders set ORDER_FILLED = 1 where 
-#            values ('""" + ingredients_string + """','""" + title + """')"""
-
-#st.write(my_insert_stmt)
-#time_to_insert = st.button('Submit order')
-
-#if time_to_insert:
-#        session.sql(my_insert_stmt).collect()
-        
-#        st.success('Your Smoothie is ordered,'+title +'!', icon="✅")
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+st.text(fruityvice_response)
