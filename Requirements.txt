@@ -1,5 +1,5 @@
 # Requirements.txt
-# snowflake-snowpark-python[pandas]
+snowflake-snowpark-python[pandas]
 snowflake
 snowflake-connector-python
 snowflake-snowpark-python
