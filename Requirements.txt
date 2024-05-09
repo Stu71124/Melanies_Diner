@@ -1,6 +1,7 @@
 # Requirements.txt
 #python.disableinstallationchecks = true
-reportMissingImports = false
+pip install 'snowflake-connector-python'
+pip install 'snowflake-snowpark-python'
 snowflake-connector-python
 snowflake-snowpark-python
 streamlit==1.31.1
