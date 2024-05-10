@@ -2,7 +2,7 @@
 
 simplejson
 chardet
-snowflake
+snowflake-snowpark-functions
 snowflake-connector-python
 snowflake-snowpark-python
 streamlit==1.31.1
