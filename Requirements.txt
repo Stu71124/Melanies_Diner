@@ -1,4 +1,6 @@
 # Requirements.txt
+simplejson
+chardet
 snowflake
 snowflake-connector-python
 snowflake-snowpark-python
