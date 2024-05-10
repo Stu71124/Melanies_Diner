@@ -1,5 +1,5 @@
 # Requirements.txt
-pip install snowflake-connector-python
+
 simplejson
 chardet
 snowflake
